@@ -1,6 +1,6 @@
 import math
 import random
-
+from .validate import validate
 
 __all__ = ['ball_in_box']
 #m stands for the number of the balloon.blockers stands for the list of the barricades.
