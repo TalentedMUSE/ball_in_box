@@ -3,11 +3,13 @@ import random
 
 
 __all__ = ['ball_in_box']
-
+#m stands for the number of the balloon.blockers stands for the list of the barricades.
 def ball_in_box(m, blockers):
     k=0
     max=0
     circles = []
+    #circles is the list which consists of a number of "lists".
+    #initializing the arrays.
     BalloonR=[0]*int(m)
     BalloonXPos=[0]*int(m)
     BalloonYPos=[0]*int(m)
@@ -30,7 +32,7 @@ def ball_in_box(m, blockers):
                     BalloonXPos[j]=random.random()*2-1
                     BalloonYPos[j]=random.random()*2-1
                     continue
-    
+    #using mathematical methods to judge.
             r=math.fabs(1-BalloonXPos[j])
             if(math.fabs(1-BalloonYPos[j])<r):
                 r=math.fabs(1-BalloonYPos[j])
